@@ -1797,10 +1797,12 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				margin-left: -0.5rem;
 			}
 
 				.row > * {
 					box-sizing: border-box;
+					padding-left: 0.5rem;
 				}
 
 				.row.gtr-uniform > * > :last-child {
