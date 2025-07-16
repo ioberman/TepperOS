@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #f8f9fa;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -144,7 +144,7 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		color: #1a1a1a;
 	}
 
 	body, input, select, textarea {
@@ -182,11 +182,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 900;
-		line-height: 1.5;
-		letter-spacing: 0.075em;
-		text-transform: uppercase;
+		font-weight: 700;
+		line-height: 1.4;
+		letter-spacing: 0.05em;
+		text-transform: none;
 		margin: 0 0 1rem 0;
+		color: #1a1a1a;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2082,14 +2083,14 @@ input, select, textarea {
 		display: inline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
+		font-weight: 700;
+		letter-spacing: 0.05em;
 		height: 3rem;
 		line-height: 3rem;
 		padding: 0 2rem;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: none;
 		white-space: nowrap;
 	}
 
@@ -2208,8 +2209,9 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #c41230;
+		color: #c41230 !important;
+		border-radius: 6px;
 	}
 
 		input[type="submit"]:hover,
@@ -2217,8 +2219,9 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 2px #c41230;
+			color: #c41230 !important;
+			background-color: rgba(196, 18, 48, 0.1);
 		}
 
 		input[type="submit"].primary,
@@ -2226,7 +2229,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #212931;
+			background-color: #c41230;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2236,7 +2239,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #18bfef;
+				background-color: #a30f28;
 			}
 
 /* Form */
@@ -3495,7 +3498,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		color: #ffffff;
+		color: #1a1a1a;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3522,28 +3525,29 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		z-index: 2;
+		background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 	}
 
 		#header input, #header select, #header textarea {
-			color: #ffffff;
+			color: #1a1a1a;
 		}
 
 		#header a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #1a1a1a;
+			border-bottom-color: rgba(196, 18, 48, 0.5);
 		}
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #c41230 !important;
 			}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #1a1a1a;
 		}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #1a1a1a;
 		}
 
 		#header blockquote {
@@ -3566,21 +3570,27 @@ input, select, textarea {
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
 			border-style: solid;
-			border-color: #ffffff;
-			border-width: 5px !important;
+			border-color: #c41230;
+			border-width: 3px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;
-			letter-spacing: 0.075em;
+			font-weight: 700;
+			letter-spacing: 0.05em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
-			text-transform: uppercase;
+			text-transform: none;
 			visibility: visible;
+			color: #1a1a1a;
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(196, 18, 48, 0.2);
 		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color: #c41230 !important;
+				color: #c41230 !important;
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(196, 18, 48, 0.3);
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3608,7 +3618,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: #1a1a1a;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3617,7 +3627,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: #fff;
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3627,6 +3637,9 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		border-radius: 12px 12px 0 0;
+		box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+		border-top: 3px solid #c41230;
 	}
 
 		#nav ul.divided li {
@@ -3634,15 +3647,15 @@ input, select, textarea {
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: #c41230;
 		}
 
 		#nav ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 2px #ffffff;
+			box-shadow: inset 0 0 0 2px #c41230;
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 2px #c41230;
 		}
 
 		#nav input, #nav select, #nav textarea {
@@ -3650,13 +3663,13 @@ input, select, textarea {
 		}
 
 		#nav a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #1a1a1a;
+			border-bottom-color: rgba(196, 18, 48, 0.5);
 		}
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #c41230 !important;
 			}
 
 		#nav strong, #nav b {
@@ -3764,6 +3777,9 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		border-radius: 0 0 12px 12px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+		border: 1px solid #e8e9ea;
 	}
 
 		#main > * {
@@ -3950,12 +3966,13 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color: #717981;
+		color: #1a1a1a;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		background-color: #f8f9fa;
+		border-top: 3px solid #c41230;
 		color: #909498;
 		cursor: default;
 		position: relative;
@@ -4385,21 +4402,23 @@ input, select, textarea {
 		}
 
 	#copyright {
-		color: #ffffff;
+		color: #1a1a1a;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
+		font-weight: 700;
+		letter-spacing: 0.05em;
 		line-height: 1.5;
 		text-align: center;
-		text-transform: uppercase;
+		text-transform: none;
 		margin: 4rem auto 8rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		background-color: #f8f9fa;
+		padding: 2rem;
+		border-top: 1px solid #e8e9ea;
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
@@ -4407,21 +4426,21 @@ input, select, textarea {
 		}
 
 		#copyright a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #1a1a1a;
+			border-bottom-color: rgba(196, 18, 48, 0.5);
 		}
 
 			#copyright a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #c41230 !important;
 			}
 
 		#copyright strong, #copyright b {
-			color: #ffffff;
+			color: #1a1a1a;
 		}
 
 		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-			color: #ffffff;
+			color: #1a1a1a;
 		}
 
 		#copyright blockquote {
@@ -4689,3 +4708,46 @@ input, select, textarea {
 		}
 
 	}
+
+/* Stylized TepperOS Logo */
+.logo-stylized {
+	display: inline-block;
+}
+
+.logo-stylized .tepper {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+}
+
+.logo-stylized .os {
+	font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.02em;
+}
+
+/* Apply to header logo */
+#header .logo .tepper {
+	font-size: 2.25rem;
+}
+
+#header .logo .os {
+	font-size: 2.25rem;
+}
+
+/* Apply to intro section */
+#intro h1 .logo-stylized .tepper {
+	font-size: inherit;
+}
+
+#intro h1 .logo-stylized .os {
+	font-size: inherit;
+}
+
+@media screen and (max-width: 736px) {
+	#header .logo .tepper,
+	#header .logo .os {
+		font-size: 1.75rem;
+	}
+}
